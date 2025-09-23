@@ -1,0 +1,96 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document 2</title>
+    <link rel="icon" href="images/bg3.jpg">
+    <style>
+        *{
+            padding:0;
+            margin:0;
+            box-sizing: border-box;
+        }
+        #a{
+            background: red;
+            width: 100%;
+            height:30px;
+            margin-bottom: 5px;
+        }
+        #b{
+            height: 80px;
+            width: 100%;
+            background: green;
+            margin-bottom:5px;
+        }
+        #c{
+            width: 100%;
+            height: 30px;
+            background-color: red;
+        }
+        #d{
+            width: 100%;
+            height:300px;
+            
+            margin-top:5px;
+        }
+        #left{
+            width: 33%;
+            height:300px;
+            background: orchid;
+            float:left;
+            margin-right: 4px;
+        }
+        #center{
+            width: 33%;
+            height:300px;
+            background:aquamarine;
+            float:left;
+            margin-right: 4px;
+            
+        }
+        #right{
+            width: 33%;
+            height:300px;
+            background:cornflowerblue;
+            float:left;
+        }
+        #e{
+            width:100%;
+            height:50px;
+            background-color:green;
+            margin-top: 5px;
+        }
+        .clearfix::after{
+            display: block;
+            content: "";
+            clear:both;
+        }
+        #wrapper{
+            width:80%;
+            margin:auto;
+        }
+    </style>
+</head>
+<body>
+    <div id="wrapper">
+    <div id="a">
+
+    </div>
+    <div id="b">
+
+    </div>
+    <div id="c">
+
+    </div>
+    <div id="d" class="clearfix">
+        <div id="left"></div>
+        <div id="center"></div>
+        <div id="right"></div>
+    </div>
+    <div id="e">
+
+    </div>
+    </div>
+</body>
+</html>
