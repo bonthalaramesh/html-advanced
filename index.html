@@ -3,403 +3,244 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>SSC :: Staff Selection Commission</title>
+    <title>Apsche</title>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/7.0.1/css/all.min.css" />
     <style>
         *{
-            padding:0px;
-            margin:0px;
+            margin: 0;
+            padding: 0;
             box-sizing: border-box;
         }
+
         table{
             width: 100%;
             text-align: center;
-        }
-        #old{
-            width: 100%;
-            height:40px;
-            background-color: darkblue;
-            margin-bottom: 10px;
+            font-family:Tempus Sans ITC;
+            line-height: 45px;
+
         }
         table img{
-            padding-left: 10px;
+            height: 100px;
         }
-        table span{
-            margin:25px;
-            text-align: center;
-            font-family: Arial, Helvetica, sans-serif;
-            font-size:1.2em;
+        table h2{
+            color:blue;
         }
-        table a{
-            text-decoration: none;
-            color:black;
+        table h5{
+            font-size: 1.5em;
         }
         nav{
-            background-color: blue;
-            overflow:hidden;
+            background-color:forestgreen;
+            overflow: hidden;
         }
         nav ul{
             list-style-type: none;
         }
         nav ul li{
             float:left;
-            
         }
         nav ul li a{
             color:white;
-            font-family: Arial, Helvetica, sans-serif;
-            font-size:16px;
             text-decoration: none;
-            padding:10px 16px;
+            font-family: Arial, Helvetica, sans-serif;
+            padding: 14px 12px;
             display: block;
+            font-size:12px;
+        }
+        nav ul li a:hover{
+            color:black;
+        }
+        #three{
+            width: 100%;
+            
             
         }
-
-        nav ul li a:hover{
-            background-color: white;
-            color:green;
-            }
-
-          .dropdown-menu{
-            position:absolute;
-            display: none;
-
-          }
-          .dropdown-menu a{
-            background-color: red;
-            border:1px solid black;
-
-          }
-          .dropdown:hover .dropdown-menu{
-            display: block;
-          }
-
-          #main{
-            width: 100%;
-            height:750px;
-            background-color:aqua;
-            margin-bottom: 15px;
-            
-          }
-          #left{
-            width:20%;
-            height: 750px;
-            background-color: white;
+        #a{
+            width: 30%;
+            height: 150px;
+            border: 1px solid black;
+            border-radius: 10px;
+            padding-top: 10px;
             float:left;
             margin: 5px;
-            margin-left:10px;
-            
-            
-          }
-          #center{
-            width: 50%;
-            height: 750px;
-            background-color: white;
+            list-style-type: none;
+            box-sizing: border-box;
+        }
+          #b{
+            width: 30%;
+            height: 150px;
+            border: 1px solid black;
+            border-radius: 10px;
+            padding-top: 10px;
             float:left;
-            margin: 5px;
-            margin-left:20px;
-          }
-          #right{
-            width: 25%;
-            height: 750px;
-            background-color: white;
+            margin: 10px;
+            box-sizing: border-box;
+        }
+          #c{
+            width: 30%;
+            height: 150px;
+            border: 1px solid black;
+            border-radius: 10px;
+            padding-top: 10px;
             float:left;
-            margin: 5px;
-            margin-left:20px;
-          }
-
-          
-          .clearfix::after{
-            display:none;
-            content:" ";
-            clear:both;
-          }
-          label{
-            padding:25px;
+            margin:10px;
+            box-sizing: border-box;
+        }
+        #a p,li{
+            padding-left: 5px;
+            line-height: 25px;
             
-          }
-
-
-
-          input[type=text] {
-            width: 300px;
-            text-align: center;
-            margin-left: 25px;
-            height: 30px;
-          }
-
-          button{
-            margin-top: 20px;
-            margin-left: 70px;
-            background-color: blue;
-            color:white;
-            height: 40px;
-            width: 70px;
-            font-weight: bold;
-            border-radius: 20px;
-            border:none;
-          }
-
-          footer{
-            background-color: darkblue;
-            text-align: center;
-            color:white;
-            font-family: Arial, Helvetica, sans-serif;
-            padding:5px;
             
-          }
+        }
+        #a a{
+            text-decoration:none;
+            color:black;
+        }
+        #a a:hover{
+            color:red;
+        }
+        #b p,li{
+            padding-left: 5px;
+
+        }
+        #b li{
+            list-style: none;
+        }
+        #b li a{
+            text-decoration: none;
+            padding-left: 25px;
+        }
+        #b li a:hover{
+            color:red;
+        }
         
+        #c a{
+            text-decoration:none;
+
+        }
+        
+        #c p{
+            padding-left: 25px;
+        }
+        #c  li{
+            padding-left: 50px;
+            list-style-type:none;
+        }
+        #c li a:hover{
+            color:red;
+        }
+        #bottom{
+            background-color: lightblue;
+            text-align: center;
+            margin-top: 10px;
+            padding: 10px;
+        }
+        #bottom span a{
+            text-decoration: none;
+            color:black;
+        }
+        #media{
+            width:100%;
+            height:50px;
+            background-color:blue;
+        }
+        #media span{
+            color:white;
+            font-family: sans-serif;
+            line-height:50px;
+        }
+        #wrapper{
+            width:80%;
+            margin: auto;
+        }
+        .clearfix::after{
+            display: block;
+            content:"";
+            clear:both;
+        }
+        .active{
+            color:white;
+            
+        }
     </style>
 </head>
 <body>
-    <header>
-        <div id="old">
-
+    <div id="wrapper">
+    <table>
+        <td>
+            <img src="images/govt.jpg" alt="">
+        </td>
+        <td>
+            <h2>Andhra Pradesh State Council for Higher Education</h2>
+            <h5>AP B.Arch Admissions - 2025</h5>
+        </td>
+        <td>
+            <img src="images/goi.png" alt="">
+        </td>
+    </table>
+    <nav>
+        <ul>
+            <li><a href="">Home</a></li>
+            <li><a href="" class="active">Back</a></li>
+            <li><a href="">Contact Us</a></li>
+            <li><a href="">Candidate Registration</a></li>
+            <li><a href=""><i class="fa-solid fa-lock"></i> Candidate Login</a></li>
+            
+        </ul>
+    </nav>
+    <div id="three" class="clearfix">
+        <div id="a">
+            <p style="font-size:14px;">CIRCULARS AND NOTIFICATIONS</p>
+            <li>
+                
+                <a href="">Notification</a> <img src="images/new.gif" alt="" width="25px;" style="height: 20px;  border-radius: 50%;" ></li>
+                
+            <li>
+                
+                <a href="">Important Dates</a>  <img src="images/new.gif" alt="" width="25px;" style="height: 20px;  border-radius: 50%;" ></li>
+            <li>
+                
+                <a href="">Circular on Eligibility Criteria</a>  <img src="images/new.gif" alt="" width="25px;" style="height: 20px;  border-radius: 50%;" ></li>
         </div>
-        <table>
-            <td>
-                <img src="images/building.jpg" alt="" width="100" height="100" style="border-radius: 50%;">
-            </td>
-            <td>
-        <h2 style="color:blue; font-family: arial;">Staff Selection Commission</h2>
-        <h4 style="color:blue; font-family: arial;">(Government of India)</h4>
-            </td>
-            
-            <td>
-                <span><a href="">Home</a></span>
-                <span><a href="">Notices</a></span>
-                <span><a href="">Apply</a></span>
-                <span><a href="">Admit Card</a></span>
-                <span><a href="">Answer Key</a></span>
-                <span><a href="">Results</a></span>
-            </td>
-            <td>
-                <img src="images/house.jpeg" alt="" width="100" height="100" style="border-radius: 50%;">
-            </td>
-        </table>
-        </header>
-        <nav>
-            <ul>
-                <li>
-                    <a href="">Chairman Message</a>
-                </li>
-                <li class="dropdown">
-                    <a href="">The Commission</a>
-                    <div class="dropdown-menu">
-                        <a href="">Background of Commission</a>
-                        <a href="">Setup of Commission</a>
-                        <a href="">Organization Structure</a>
-                        <a href="">Function of Commission</a>
-                        <a href="">Regional Network</a>
-                    </div>
-                </li>
-                <li class="dropdown">
-                    <a href="">Candiate Corner</a>
-                    <div class="dropdown-menu">
-                        <a href="">Script Evaluation</a>
-                        <a href="">Sample Copy of OMR Sheet</a>
-                        <a href="">Examination Calander</a>
-                        <a href="">Scheme of Examination</a>
-                        <a href="">Syllabus</a>
-                    </div>
-                </li>
-                <li>
-                    <a href="">Tender</a>
-                </li>
-                <li class="dropdown">
-                    <a href="">RTI</a>
-                    <div class="dropdown-menu">
-                        <a href="">RTI - MIS</a>
-                        <a href="">Proactive Disclosure</a>
-                    </div>
-                </li>
-            </ul>
-        </nav>
-        <div id="main" class="clearfix">
-            <div id="left"> 
-                <div class="first">
-                    <img src="images/laptop.webp" alt="" width="100%" height="150px;">
-                     <p style="text-align: center; font-weight: bold ; font-family: Arial, Helvetica, sans-serif;">Government to take action against <br> ap turns focus on airports</p>
-                </div>
-                <div id="second">
-                    <div>
-                        <img src="images/flower.webp" alt="" width="80%" height="150px"; style="border-radius: 25%; margin-left:25px; margin-top: 10px;" > 
-                        <p style="text-align: center; font-weight: bold; font-family: Arial, Helvetica, sans-serif;">Azadi Ka Amruth Mahostav</p>                        
-                    </div>
-                </div>
-                <div id="third">
-                        <img src="images/flowers.jpg" alt="" width="80%" height="150px"; style="border-radius: 25%; margin-left:25px; margin-top: 10px;" > 
-                        <p style="text-align: center; font-weight: bold; font-size: 15px; font-family: Arial, Helvetica, sans-serif; margin-bottom: 10px;">National Career Services</p>
-                </div>
-                <div id="fourth">
-                    <p style="border-radius: 10px; padding-top: 20px; padding-bottom: 20px; padding-left: 10px; padding-right: 10px; text-align: center; width: 250px; font-family: Arial, Helvetica, sans-serif; border: 2px solid green; margin:auto;">Lorem ipsum dolor sit amet <br> consectetur adipisicing elit. Blanditiis <br> qui impedit minus! Cupiditate, eius quibusdam!</p>
-                </div>
-            </div>
-            <div id="center">
-                <h2 style="background-color: brown; color:white; padding: 10px; font-family: Arial, Helvetica, sans-serif;">Latest News</h2>    
-                <table>
-                    <tr>
-                        <td>Feb 26 2024</td>
-                        <td><a href="" style="color:red; font-family: Arial, Helvetica, sans-serif;">Notice: Regarding OTR and Application Module  </a></td>
-                        <td><img src="images/Thumb_Impression.jpg" alt="" width="30px"> (12.25KB )</td>
-                    </tr>
-                    <tr>
-                        <td>Feb 22 2024</td>
-                        <td><a href=" " style="color:red; font-family: Arial, Helvetica, sans-serif;">Lanching of New Website of Commission</a></td>
-                        <td><img src="images/Thumb_Impression.jpg" alt="" width="30px"> (12.25KB )</td>
-                    </tr>
-                    <tr>
-                        <td>Feb 26 2024</td>
-                        <td><a href="" style="color:red; font-family: Arial, Helvetica, sans-serif;">Notice: Regarding OTR and Application Module  </a></td>
-                        <td><img src="images/Thumb_Impression.jpg" alt="" width="30px"> (12.25KB )</td>
-                    </tr>
-                    <tr>
-                        <td>Feb 22 2024</td>
-                        <td><a href=" " style="color:red; font-family: Arial, Helvetica, sans-serif;">Lanching of New Website of Commission</a></td>
-                        <td><img src="images/Thumb_Impression.jpg" alt="" width="30px"> (12.25KB )</td>
-                    </tr>
-                    <tr>
-                        <td>Feb 26 2024</td>
-                        <td><a href="" style="color:red; font-family: Arial, Helvetica, sans-serif;">Notice: Regarding OTR and Application Module  </a></td>
-                        <td><img src="images/Thumb_Impression.jpg" alt="" width="30px"> (12.25KB )</td>
-                    </tr>
-                    <tr>
-                        <td>Feb 22 2024</td>
-                        <td><a href=" " style="color:red; font-family: Arial, Helvetica, sans-serif;">Lanching of New Website of Commission</a></td>
-                        <td><img src="images/Thumb_Impression.jpg" alt="" width="30px"> (12.25KB )</td>
-                    </tr>
-                    <tr>
-                        <td>Feb 26 2024</td>
-                        <td><a href="" style="color:red; font-family: Arial, Helvetica, sans-serif;">Notice: Regarding OTR and Application Module  </a></td>
-                        <td><img src="images/Thumb_Impression.jpg" alt="" width="30px"> (12.25KB )</td>
-                    </tr>
-                    <tr>
-                        <td>Feb 22 2024</td>
-                        <td><a href=" " style="color:red; font-family: Arial, Helvetica, sans-serif;">Lanching of New Website of Commission</a></td>
-                        <td><img src="images/Thumb_Impression.jpg" alt="" width="30px"> (12.25KB )</td>
-                    </tr>
-                    <tr>
-                        <td>Feb 26 2024</td>
-                        <td><a href="" style="color:red; font-family: Arial, Helvetica, sans-serif;">Notice: Regarding OTR and Application Module  </a></td>
-                        <td><img src="images/Thumb_Impression.jpg" alt="" width="30px"> (12.25KB )</td>
-                    </tr>
-                    <tr>
-                        <td>Feb 22 2024</td>
-                        <td><a href=" " style="color:red; font-family: Arial, Helvetica, sans-serif;">Lanching of New Website of Commission</a></td>
-                        <td><img src="images/Thumb_Impression.jpg" alt="" width="30px"> (12.25KB )</td>
-                    </tr>
-                    <tr>
-                        <td>Feb 26 2024</td>
-                        <td><a href="" style="color:red; font-family: Arial, Helvetica, sans-serif;">Notice: Regarding OTR and Application Module  </a></td>
-                        <td><img src="images/Thumb_Impression.jpg" alt="" width="30px"> (12.25KB )</td>
-                    </tr>
-                    <tr>
-                        <td>Feb 22 2024</td>
-                        <td><a href=" " style="color:red; font-family: Arial, Helvetica, sans-serif;">Lanching of New Website of Commission</a></td>
-                        <td><img src="images/Thumb_Impression.jpg" alt="" width="30px"> (12.25KB )</td>
-                    </tr>
-                    <tr>
-                        <td>Feb 26 2024</td>
-                        <td><a href="" style="color:red; font-family: Arial, Helvetica, sans-serif;">Notice: Regarding OTR and Application Module  </a></td>
-                        <td><img src="images/Thumb_Impression.jpg" alt="" width="30px"> (12.25KB )</td>
-                    </tr>
-                    <tr>
-                        <td>Feb 22 2024</td>
-                        <td><a href=" " style="color:red; font-family: Arial, Helvetica, sans-serif;">Lanching of New Website of Commission</a></td>
-                        <td><img src="images/Thumb_Impression.jpg" alt="" width="30px"> (12.25KB )</td>
-                    </tr>
-                    <tr>
-                        <td>Feb 26 2024</td>
-                        <td><a href="" style="color:red; font-family: Arial, Helvetica, sans-serif;">Notice: Regarding OTR and Application Module  </a></td>
-                        <td><img src="images/Thumb_Impression.jpg" alt="" width="30px"> (12.25KB )</td>
-                    </tr>
-                    <tr>
-                        <td>Feb 22 2024</td>
-                        <td><a href=" " style="color:red; font-family: Arial, Helvetica, sans-serif;">Lanching of New Website of Commission</a></td>
-                        <td><img src="images/Thumb_Impression.jpg" alt="" width="30px"> (12.25KB )</td>
-                    </tr>
-                    <tr>
-                        <td>Feb 26 2024</td>
-                        <td><a href="" style="color:red; font-family: Arial, Helvetica, sans-serif;">Notice: Regarding OTR and Application Module  </a></td>
-                        <td><img src="images/Thumb_Impression.jpg" alt="" width="30px"> (12.25KB )</td>
-                    </tr>
-                    <tr>
-                        <td>Feb 22 2024</td>
-                        <td><a href=" " style="color:red; font-family: Arial, Helvetica, sans-serif;">Lanching of New Website of Commission</a></td>
-                        <td><img src="images/Thumb_Impression.jpg" alt="" width="30px"> (12.25KB )</td>
-                    </tr>
-                    <tr>
-                        <td>Feb 26 2024</td>
-                        <td><a href="" style="color:red; font-family: Arial, Helvetica, sans-serif;">Notice: Regarding OTR and Application Module  </a></td>
-                        <td><img src="images/Thumb_Impression.jpg" alt="" width="30px"> (12.25KB )</td>
-                    </tr>
-                    <tr>
-                        <td>Feb 22 2024</td>
-                        <td><a href=" " style="color:red; font-family: Arial, Helvetica, sans-serif;">Lanching of New Website of Commission</a></td>
-                        <td><img src="images/Thumb_Impression.jpg" alt="" width="30px"> (12.25KB )</td>
-                    </tr>
-                    <tr>
-                        <td>Feb 26 2024</td>
-                        <td><a href="" style="color:red; font-family: Arial, Helvetica, sans-serif;">Notice: Regarding OTR and Application Module  </a></td>
-                        <td><img src="images/Thumb_Impression.jpg" alt="" width="30px"> (12.25KB )</td>
-                    </tr>
-                    <tr>
-                        <td>Feb 22 2024</td>
-                        <td><a href=" " style="color:red; font-family: Arial, Helvetica, sans-serif;">Lanching of New Website of Commission</a></td>
-                        <td><img src="images/Thumb_Impression.jpg" alt="" width="30px"> (12.25KB )</td>
-                    </tr>
-                    <tr>
-                        <td>Feb 26 2024</td>
-                        <td><a href="" style="color:red; font-family: Arial, Helvetica, sans-serif;">Notice: Regarding OTR and Application Module  </a></td>
-                        <td><img src="images/Thumb_Impression.jpg" alt="" width="30px"> (12.25KB )</td>
-                    </tr>
-                    <tr>
-                        <td>Feb 22 2024</td>
-                        <td><a href=" " style="color:red; font-family: Arial, Helvetica, sans-serif;">Lanching of New Website of Commission</a></td>
-                        <td><img src="images/Thumb_Impression.jpg" alt="" width="30px"> (12.25KB )</td>
-                    </tr>
-                    <tr>
-                        <td>Feb 26 2024</td>
-                        <td><a href="" style="color:red; font-family: Arial, Helvetica, sans-serif;">Notice: Regarding OTR and Application Module  </a></td>
-                        <td><img src="images/Thumb_Impression.jpg" alt="" width="30px"> (12.25KB )</td>
-                    </tr>
-                    <tr>
-                        <td>Feb 22 2024</td>
-                        <td><a href=" " style="color:red; font-family: Arial, Helvetica, sans-serif;">Lanching of New Website of Commission</a></td>
-                        <td><img src="images/Thumb_Impression.jpg" alt="" width="30px"> (12.25KB )</td>
-                    </tr>
-                    <tr>
-                        <td>Feb 26 2024</td>
-                        <td><a href="" style="color:red; font-family: Arial, Helvetica, sans-serif;">Notice: Regarding OTR and Application Module  </a></td>
-                        <td><img src="images/Thumb_Impression.jpg" alt="" width="30px"> (12.25KB )</td>
-                    </tr>
-                    
-                </table>
-            </div>
-            <div id="right">
-                <div>
-               <h2 style="background-color:brown; color:white;padding: 10px; font-family: Arial, Helvetica, sans-serif;">Login Form</h2> 
-               <label for="" style="color:red; font-weight: bold;">Username (Registration Number)</label> <br><br>
-               <input type="text"><br> <br>
-               <label for="">Password (SSC Registration Password)</label> <br><br>
-               <input type="text">
-               <button>Submit</button>
-               <button>Cancel</button>
-            </div>
-            <div id="Calander">
-                <h2 style="background-color: brown; color:white; margin-top:10px; font-family: Arial, Helvetica, sans-serif; text-align: left; padding:10px; ">Calander</h2>
-                <p style="margin-top: 10px; margin-right:10px; margin-left: 40px; font-weight: bold;">Lorem, ipsum dolor sit amet consectetur adipisicing elit. Ipsum, molestias.</p>
-            </div>
-            </div>
-            
-
-        <footer>
-            <div>
-                &copy; Copyright All Rights Reserved 2024.
-            </div>
-            <div>
-                Designed by Bonthala Ramesh. Please Contact: 9642676310.
-            </div>
-        </footer>
+        <div id="b">
+            <p> USEFUL LINKS</p>
+            <li><a href=""> New Candidate Registration</a> <img src="images/new.gif" alt="" width="25px;" style="height: 20px;  border-radius: 50%;" ></li>
+            <li><a href="">  Candidate Login</a></li>
+            <li><a href=""> Contact Us</a></li>
+            <p>College Information</p>
+        </div>
+        <div id="c">
+            <p>ELIGIBILITY</p>
+            <li><a href=""> List of Games (Sports Quota)</a></li>
+            <li><a href=""> Local Status G.O.</a></li>
+            <li><a href="">SC Bifurcation G.O.</a></li>
+        </div>
+    </div>
     
+    <div id="Useful">
+        <p style="font-weight: bold;">Useful Instructions:</p>
+        <ul style="list-style-type: none;">
+            <li> a) Candidates Should be entered their names and passowrds frquently.</li>
+            <li> b) Candidates Should check their names freqently. </li>
+            <li> c) Candidates have to Login and check their results frequently.</li>
+            <li> d) Fill Application</li>
+            <li> e) Upload Documents</li>
+            <li> f) Fees Payment</li>
+            <li> g) Print Form</li>
+        </ul>
+    </div>
+    <h5 style="text-align: center;">VISITOR: 1079</h5>
+    <div id="bottom">
+        <span><a href="">Terms & Conditions</a></span> |
+        <span><a href="">Refund & Cancellation Policy</a></span> |
+        <span><a href="">Disclaimer</a></span> |
+        <span><a href="">Contact Us</a></span>
+        
+    </div>
+    <div id="media">
+        &nbsp;&nbsp;&nbsp;<span>&copy; All Rights Reserved 2025.</span>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
+        <span><i class="fa-brands fa-twitter"></i> <i class="fa-brands fa-facebook"></i> </span>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
+        <span>Designed and Developed by APSCHE</span>
+    </div>
+    </div>
 </body>
 </html>
